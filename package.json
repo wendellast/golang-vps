@@ -1,0 +1,17 @@
+{
+  "name": "golang-vps",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts"
+  },
+  "repository": "git@github.com:wendellast/golang-vps.git",
+  "author": "wendellast <wendelalves01a@hotmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "ts-node-dev": "^2.0.0",
+    "tsc": "^2.0.4",
+    "typescipt": "^1.0.0",
+    "typescript": "^5.6.3"
+  }
+}
