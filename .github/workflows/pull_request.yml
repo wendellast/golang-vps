@@ -1,0 +1,23 @@
+name: pull_request
+
+on: [pull_request]
+
+jobs:
+  install:
+    name: Installing Package
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/chekout@v3
+
+      - name: Cache node_modules
+        uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-${{ hashFiles('**/yarn.lock')  }}
+      
+      - name: Install dependecies
+        run: yarn install 
+          
+
+
